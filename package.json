@@ -1,0 +1,33 @@
+{
+  "name": "ojet-form",
+  "version": "1.0.0",
+  "description": "Oracle JET form",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenshinmax/swd-form-project.git"
+  },
+  "keywords": [
+    "oracle",
+    "jet",
+    "knockout"
+  ],
+  "author": "Cliff Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenshinmax/swd-form-project/issues"
+  },
+  "homepage": "https://github.com/kenshinmax/swd-form-project#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "require": "^2.4.20",
+    "time-grunt": "^1.3.0"
+  }
+}

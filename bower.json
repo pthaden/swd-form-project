@@ -1,0 +1,25 @@
+{
+  "name": "ojet-form",
+  "description": "Oracle JET form",
+  "main": "index.html",
+  "authors": [
+    "Cliff Sanchez"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "oracle",
+    "jet",
+    "knockout"
+  ],
+  "homepage": "https://github.com/kenshinmax/swd-form-project",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "oraclejet": "^2.0.2"
+  }
+}
