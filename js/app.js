@@ -11,7 +11,7 @@ requirejs.config({
     'ojL10n': 'libs/oj/v2.0.2/ojL10n',
     'ojtranslations': 'libs/oj/v2.0.2/resources',
     'signals': 'libs/js-signals/signals.min',
-    'text': 'libs/require/text',
+    'text': 'libs/require/text'
 
   },
   // Shim configurations for modules that do not expose AMD
@@ -39,13 +39,19 @@ require(['knockout',
   'ojs/ojcore',
   'jquery',
   'ojs/ojknockout',
-  'ojs/ojlistview'
+  'ojs/ojprogressbar',
+  'ojs/ojinputtext'
 ], function(ko, oj, $) {
   'use strict';
 
   var ViewModel = function() {
      var self = this;
      self.message = ko.observable("Hello!!!");
+     self.progressValue = ko.observable(20);
+     self.name = ko.observable();
+     self.address = ko.observable();
+     self.city = ko.observable();
+
   };
   ko.applyBindings(new ViewModel());
 });

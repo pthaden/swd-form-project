@@ -4,12 +4,61 @@
     <meta charset="UTF-8">
     <!-- This is the main css file for the default Alta theme -->
     <link rel="stylesheet" href="css/libs/oj/v2.0.2/alta/oj-alta-min.css" type="text/css"/>
-
+    <script data-main="js/app" src="js/libs/require/require.js"></script>
+    
     <title>Contact Information</title>
 </head>
 <body>
-     <span data-bind="text:message"></span>
-   
-<script data-main="js/app" src="js/libs/require/require.js"></script>
+<div id="progressbarWrapper">													
+  <div id="progressbar" 
+       data-bind="ojComponent:{
+	      component: 'ojProgressbar', 
+	      value: progressValue
+	  }">
+  </div>
+</div>
+<div id="form-container" class="oj-form-layout">
+  <div class="oj-form oj-sm-odd-cols-12 oj-md-odd-cols-4 oj-md-labels-inline">  
+    <div class="oj-flex">  
+      <div class="oj-flex-item">
+        <label for="name">Name</label>
+      </div>
+      <div class="oj-flex-item">
+        <input id="name" 
+               data-bind="ojComponent:{
+                component: 'ojInputText', 
+                value: name,
+                required: true
+              }">
+      </div>
+    </div>
+    <div class="oj-flex"> 
+      <div class="oj-flex-item">
+        <label for="address">Address</label>
+      </div>
+      <div class="oj-flex-item">
+        <input id="address" 
+               data-bind="ojComponent:{
+                component: 'ojInputText', 
+                value: address,
+                required: true
+              }">
+      </div>
+    </div>
+    <div class="oj-flex"> 
+      <div class="oj-flex-item">
+        <label  for="city">City</label>
+      </div>
+      <div class="oj-flex-item">
+        <input id="city" 
+               data-bind="ojComponent: {
+                component: 'ojInputText',
+                value: city}">
+      </div>
+    </div>
+  </div>    
+</div> 
+
 </body>
+
 </html>
