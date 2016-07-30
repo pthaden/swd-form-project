@@ -1,17 +1,17 @@
 requirejs.config({
   // Path mappings for the logical module names
   paths: {
-   'knockout': 'libs/knockout/knockout-3.4.0',
-    'jquery': 'libs/jquery/jquery-2.1.3.min',
-    'jqueryui-amd': 'libs/jquery/jqueryui-amd-1.11.4.min',
-    'promise': 'libs/es6-promise/promise-1.0.0.min',
-    'hammerjs': 'libs/hammer/hammer-2.0.4.min',
-    'ojdnd': 'libs/dnd-polyfill/dnd-polyfill-1.0.0.min',
-    'ojs': 'libs/oj/v2.0.2/debug',
-    'ojL10n': 'libs/oj/v2.0.2/ojL10n',
-    'ojtranslations': 'libs/oj/v2.0.2/resources',
-    'signals': 'libs/js-signals/signals.min',
-    'text': 'libs/require/text'
+   'knockout': '/bower_components/knockout/dist/knockout',
+    'jquery': '/bower_components/jquery/dist/jquery.min',
+    'jqueryui-amd': '/bower_components/jquery-ui/ui',
+    'promise': '/bower_components/es6-promise/promise.min',
+    'hammerjs': '/bower_components/hammerjs/hammer.min',
+    'ojdnd': '/bower_components/oraclejet/dist/js/libs/dnd-polyfill/dnd-polyfill-1.0.0.min',
+    'ojs': '/bower_components/oraclejet/dist/js/libs/oj/debug',
+    'ojL10n': '/bower_components/oraclejet/dist/js/libs/oj/ojL10n',
+    'ojtranslations': '/bower_components/oraclejet/dist/js/libs/oj/resources',
+    'signals': '/bower_components/js-signals/dist/signals.min',
+    'text': '/bower_components/text/text'
 
   },
   // Shim configurations for modules that do not expose AMD
